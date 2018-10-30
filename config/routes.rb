@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/', to: 'welcome#first_name'
   get 'gossip/display_id'
   get 'gossip/display_all'
   get '/welcome/:first_name', to: 'welcome#first_name'
