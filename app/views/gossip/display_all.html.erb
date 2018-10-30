@@ -1,0 +1,5 @@
+<ul> <% @gossips.each do |x|%>
+       <li> <%= x.author %></li>
+       <li> <%= x.content %> </li>
+        <li><%=x.created_at%></li>
+         <% end %> </ul>

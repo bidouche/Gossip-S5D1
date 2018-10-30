@@ -1,0 +1,11 @@
+   <h1> Bonjour <%= @first_name %> ! </h1>
+        <div class="gossips">
+      <% @gossips.each do |x|%>
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title"><%= x.author %></h5>
+    <p class="card-text"><%= x.content %></p>
+    <%= link_to("Gossip", "/gossip/#{x.id}") %>
+    </div>
+  </div>
+  <% end %>
